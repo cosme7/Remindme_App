@@ -178,3 +178,165 @@
 .h-fig img{
     width: 100%;
 }
+/* HEADER END */
+
+/* MAIN 1º CONTAINER */
+.card-container{
+    width: 100%;
+    padding: 2.5em 6vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.calendary-card, .archive-card, .notification-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.calendary-fig, .archive-fig, .notification-fig{
+    width: 25vw;
+    height: 25vw;
+    border-radius: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEF4FF;
+}
+
+.calendary-img, .archive-img, .notification-img{
+    width: 15vw;
+}
+
+.calendary-card h3, .archive-card h3, .notification-card h3{
+    font-size: calc(.2rem + 5vw);
+    font-family: 'Poppins', sans-serif;
+}
+
+.calendary-card p, .archive-card p, .notification-card p{
+    font-size: calc(.2rem + 3.5vw);
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8em;
+    text-align: center;
+    color: #747474;
+}
+
+/* MAIN 2º & 3º CONTAINER */
+.set-up-container, .priority-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.set-up-fig, .priority-fig{
+    background-color: #EEF4FF;
+}
+
+.setup-desktop, .priority-desktop{
+    display: none;
+}
+
+.setup-mobile, .priority-mobile{
+    width: 100%;
+    display: initial;
+}
+
+.set-up-txt, .priority-txt{
+    width: 100%;
+    padding: 2em 6vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.set-up-txt h3, .priority-txt h3{
+    font-size: calc(.2rem + 5vw);
+    font-family: 'Poppins', sans-serif;
+}
+
+.set-up-txt p, .priority-txt p{
+    font-size: calc(.2rem + 3.5vw);
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8em;
+    color: #747474;
+}
+
+/* MAIN 4º CONTAINER */
+.download-container{
+    width: 90%;
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    background-color: #2D76F9;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.download-container h3{
+    width: 19ch;
+    font-size: calc(.2rem + 5vw);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.btn-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.download-btn, .about-btn{
+    width: 13em;
+    height: 4em;
+    font-size: calc(.2rem + 4vw);
+    border: 2px solid white;
+    border-radius: 1500px;
+    background-color: #2D76F9;
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+    cursor: pointer;
+}
+
+.download-btn:hover, .about-btn:hover{
+    background-color: white;
+    color: #2D76F9;
+}
+
+.download-fig{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    z-index: -1;
+}
+
+.ellipse-top,
+.ellipse-bottom{
+    width: 40vw;
+}
+
+.ellipse-top{
+    align-self: flex-start;
+}
+
+.ellipse-bottom{
+    align-self: flex-end;
+}
+
+/* MAIN 5º CONTAINER */
+
+
+
