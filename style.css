@@ -7,10 +7,6 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    /* 
-    font-family: 'Nunito', sans-serif;
-    font-family: 'Poppins', sans-serif; 
-    */
 }
 
 /* HEADER START */
@@ -65,7 +61,6 @@
 }
 
 .h-ul a{
-    width: 100%;
     font-size: calc(.2rem + 4vw);
     font-weight: 400;
     font-family: 'Poppins', sans-serif; 
@@ -132,13 +127,26 @@
 /* MENU CONFIG END */
 
 .h-btn{
+    width: 10em;
+    height: 3em;
+    font-size: calc(.2rem + 1vw);
+    border: 1.5px solid #2D76F9;
+    border-radius: 250px;
+    color: #2D76F9;
+    font-family: 'Poppins', sans-serif; 
+    cursor: pointer;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
     display: none;
 }
+
 /* HEADER 2º CONTAINER */
 .header-low{
     width: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .h-text{
@@ -168,7 +176,7 @@
     width: 14em;
     height: 5em;
     font-size: calc(.2rem + 3.5vw);
-    border-radius: 1500px;
+    border-radius: 250px;
     background-color: #2D76F9;
     color: white;
     font-family: 'Poppins', sans-serif; 
@@ -246,7 +254,6 @@
 }
 
 .set-up-txt, .priority-txt{
-    width: 100%;
     padding: 2em 7vw;
     display: flex;
     flex-direction: column;
@@ -302,7 +309,7 @@
     height: 4em;
     font-size: calc(.2rem + 4vw);
     border: 2px solid white;
-    border-radius: 1500px;
+    border-radius: 250px;
     background-color: #2D76F9;
     color: white;
     font-family: 'Poppins', sans-serif; 
@@ -340,6 +347,8 @@
 /* MAIN 5º CONTAINER */
 .opinion-container{
     padding: 2em 7vw;
+    display: flex;
+    flex-direction: column;
 }
 
 .opinion-fig{
@@ -348,7 +357,7 @@
 }
 
 .opinion-wrapper{
-    width: 100%;
+
     display: flex;
     flex-direction: column;
     gap: 1.5em;
@@ -506,4 +515,310 @@
 
 .footer-social-fig img{
     width: 10vw;
+}
+
+@media (min-width: 700px){
+    /* HEADER DESKTOP 1º CONTAINER */
+    .header-top{
+        padding: 2vw 4vw 0;
+        justify-content: space-between;
+    }
+    
+    .h1-box{
+        gap: 1vw;
+    }
+    
+    .logo-img{
+        width: 3vw;
+    }
+    
+    .h1-box h1{
+        font-size: calc(.2rem + 1vw);
+    }
+    
+    .h-nav{
+        width: 70%;
+        transform: scale(1);
+        position: initial;
+        z-index: 0;
+    }
+    
+    .h-ul{
+        flex-direction: row;
+    }
+    
+    .h-ul li{
+        width: 7vw;
+    }
+
+    .h-ul a{
+        font-size: calc(.2rem + 1vw);
+        opacity: 1;
+    }
+
+    .nav-toggle-label{
+        display: none;
+    }
+    
+    .h-btn{
+        display: initial;
+    }
+
+    /* HEADER DESKTOP 2º CONTAINER */
+    .header-low{
+        flex-direction: row;
+    }
+    
+    .h-text{
+        padding: 2vw 0 0 4vw;
+        gap: 3vw;
+    }
+    
+    .h-text h2{
+        font-size: calc(.2rem + 4.5vw);
+    }
+    
+    .h-text p{
+        width: 47ch;
+        font-size: calc(.2rem + 1.1vw);
+    }
+    
+    .h-low-btn{
+        width: 16em;
+        font-size: calc(.2rem + .7vw);
+    }
+    
+    .h-fig{
+        width: 100%;
+        position: relative;
+        top: -6.2vw;
+        right: 0;
+        z-index: 0;
+    }
+
+    .h-fig img{
+        border-bottom-left-radius: 10vw;
+    }
+
+    /* MAIN DESKTOP 1º CONTAINER */
+    .card-container{
+        padding: 2vw 4vw 0;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 0;
+    }
+    
+    .calendary-card, .archive-card, .notification-card{
+        align-items: flex-start;
+        gap: 1.5em;
+    }
+    
+    .calendary-fig, .archive-fig, .notification-fig{
+        width: 7vw;
+        height: 7vw;
+    }
+    
+    .calendary-img, .archive-img, .notification-img{
+        width: 4vw;
+    }
+    
+    .calendary-card h3, .archive-card h3, .notification-card h3{
+        font-size: calc(.2rem + 1.1vw);
+    }
+    
+    .calendary-card p, .archive-card p, .notification-card p{
+        width: 35ch;
+        font-size: calc(.2rem + .9vw);
+        text-align: left;
+    }
+
+    /* MAIN DESKTOP 2º & 3º CONTAINER */
+    .set-up-container, .priority-container{
+        padding: 6vw 0 0 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .set-up-fig{
+        width: 45%;
+        border-radius: 0 70px 180px 0;
+    }
+
+    .priority-fig{
+        width: 45%;
+        border-radius: 70px 0 0 180px;
+        order: 2;
+    }
+
+    .setup-desktop, .priority-desktop{
+        width: 100%;
+        display: initial;
+    }
+
+    .setup-mobile, .priority-mobile{
+        display: none;
+    }
+
+    .set-up-txt, .priority-txt{
+        padding: 2vw 4vw 0;
+        gap: 2em;
+    }
+
+    .set-up-txt h3, .priority-txt h3{
+        width: 20ch;
+        font-size: calc(.2rem + 2.5vw);
+    }
+
+    .set-up-txt p, .priority-txt p{
+        width: 45ch;
+        font-size: calc(.2rem + 1.1vw);
+    }
+
+    /* MAIN DESKTOP 4º CONTAINER */
+    .download-container{
+        width: 90%;
+        margin: 8vw auto;
+        padding: 6vw 0;
+        gap: 8vw;
+    }
+    
+    .download-container h3{
+        width: 35ch;
+        font-size: calc(.2rem + 1.5vw);
+    }
+    
+    .btn-wrapper{
+        flex-direction: row;
+        gap: 2.5vw;
+    }
+    
+    .download-btn, .about-btn{
+        font-size: calc(.2rem + 1vw);
+    }
+    
+    .ellipse-top,
+    .ellipse-bottom{
+        width: 15vw;
+    }
+
+    /* MAIN DESKTOP 5º CONTAINER */
+    .opinion-container{
+        padding: 2em 5vw 2em 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .opinion-fig{
+        width: 50%;
+        border-radius: 0 8vw 8vw 0;
+        display: initial;
+    }
+
+    .opinion-fig img{
+        width: 80%;
+    }
+    
+    .opinion-wrapper{
+        align-self: flex-end;
+        gap: 2vw;
+    }
+    
+    .opinion-wrapper h2{
+        font-size: calc(.2rem + 2.5vw);
+    }
+    
+    .opinion-txt img{
+        width: 7vw;
+    }
+    
+    .opinion-card h3{
+        font-size: calc(.2rem + 1.4vw);
+    }
+    
+    .opinion-card h4{
+        font-size: calc(.2rem + 1vw);
+    }
+    
+    .opinion-wrapper p{
+        width: 40ch;
+        font-size: calc(.2rem + 1.2vw);
+    }
+    
+    .opinion-btn-wrapper{
+        justify-content: flex-start;
+        gap: 1em;
+    }
+    
+    .back-btn img, .next-btn img{
+        width: 3vw;
+    }
+
+    /* FOOTER DESKTOP */
+    .footer-container{
+        padding: 7vw 7vw 3em;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    /* FOOTER DESKTOP 1º BOX */
+    .footer-logo-box{
+        gap: 2vw;
+    }
+
+    .footer-wrapper img{
+        width: 6vw;
+    }
+    
+    .footer-wrapper h3{
+        font-size: calc(.2rem + 1.5vw);
+    }
+    
+    .footer-logo-box p{
+        font-size: calc(.2rem + 1vw);
+    }
+    
+    /* FOOTER DESKTOP 2º BOX */
+    .footer-nav{
+        width: 35%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .f-sitemaps h3, .f-advantages h3{
+        font-size: calc(.2rem + 1.2vw);
+        padding: 2vw 0 0 0;
+    }
+    
+    .footer-ul{
+        padding-top: 4vw;
+    }
+
+    .footer-ul a{
+        font-size: calc(.2rem + 1vw);
+    }
+    
+    .footer-ul a::before{
+        font-size: calc(.2rem + 1.5vw);
+    }
+    
+    /* FOOTER DESKTOP 3º BOX */
+    .footer-social{
+        gap: 4.5vw;
+    }
+
+    .footer-social h3{
+        font-size: calc(.2rem + 1.2vw);
+        padding-top: 2vw;
+    }
+    
+    .footer-social-fig{
+        gap: 1vw;
+    }
+    
+    .footer-social-fig img{
+        width: 3vw;
+    }
 }
